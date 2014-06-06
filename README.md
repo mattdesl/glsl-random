@@ -12,9 +12,6 @@ However, the 'classic' lowp version (with no precision specified) is also includ
 ```glsl
 #pragma glslify: random = require(glsl-random)
 
-//or you can use the lowp / default precision version:
-//#pragma glslify: random = require(glsl-random/lowp)
-
 ...
 	vec2 rnd = random(myVec.xy);
 ```
@@ -24,3 +21,9 @@ Typically you might use it like so:
 ```glsl
 gl_FragColor = random( gl_FragCoord.xy / resolution.xy );
 ```
+
+### default precision
+
+Requiring the following will give you a function that doesn't specify any precision:  
+
+```#pragma glslify: random = require(glsl-random/lowp)```
