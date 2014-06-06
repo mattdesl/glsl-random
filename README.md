@@ -13,13 +13,13 @@ However, the 'classic' lowp version (with no precision specified) is also includ
 #pragma glslify: random = require(glsl-random)
 
 ...
-	vec2 rnd = random(myVec.xy);
+	float rnd = random(myVec.xy);
 ```
 
 Typically you might use it like so:
 
 ```glsl
-gl_FragColor = random( gl_FragCoord.xy / resolution.xy );
+gl_FragColor = vec4( vec3( random( gl_FragCoord.xy / resolution.xy ) ), 1.0 );
 ```
 
 ### default precision
