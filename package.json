@@ -14,7 +14,7 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "test-browser": "browserify test/index.js -t glslify | testling -x open",
-    "build-test": "echo \"Building Tests\" && browserify test/index.js -t glslify -o test/build.js"
+    "build-test": "echo \"Building Tests\" && npm i glslify && browserify test/index.js -t glslify -o test/build.js"
   },
   "dependencies": {},
   "devDependencies": {
