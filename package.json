@@ -38,14 +38,14 @@
     "files": "test/build.js",
     "preprocess": "npm run build-test",
     "browsers": [
-      "ie/8..latest",
-      "firefox/17..latest",
+      "ie/latest",
+      "firefox/20..latest",
       "firefox/nightly",
-      "chrome/22..latest",
+      "chrome/26..latest",
       "chrome/canary",
       "opera/12..latest",
       "opera/next",
-      "safari/5.1..latest",
+      "safari/6..latest",
       "ipad/6.0..latest",
       "iphone/6.0..latest",
       "android-browser/4.2..latest"
