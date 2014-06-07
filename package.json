@@ -35,7 +35,7 @@
   ],
   "testling": {
     "files": "test/test.js",
-    "preprocess": "npm i glslify && browserify test/index.js -t glslify",
+    "preprocess": "npm i glslify browserify && browserify test/index.js -t glslify",
     "browsers": [
       "ie/8..latest",
       "firefox/17..latest",
