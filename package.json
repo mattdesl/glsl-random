@@ -15,20 +15,6 @@
   "scripts": {
     "test": "browserify test/index.js -t glslify | testling -x open"
   },
-  "testling": {
-    "files": "test/test.js",
-    "preprocess": "browserify test/index.js -t glslify",
-    "browsers": [
-      "ie/6..latest",
-      "chrome/22..latest",
-      "firefox/16..latest",
-      "safari/latest",
-      "opera/11.0..latest",
-      "iphone/6",
-      "ipad/6",
-      "android-browser/latest"
-    ]
-  },
   "dependencies": {},
   "devDependencies": {
     "tape": "~2.13.2",
@@ -45,5 +31,22 @@
     "rand",
     "hash",
     "webgl"
-  ]
+  ],
+  "testling": {
+    "files": "test/test.js",
+    "preprocess": "browserify test/index.js -t glslify",
+    "browsers": [
+      "ie/8..latest",
+      "firefox/17..latest",
+      "firefox/nightly",
+      "chrome/22..latest",
+      "chrome/canary",
+      "opera/12..latest",
+      "opera/next",
+      "safari/5.1..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest",
+      "android-browser/4.2..latest"
+    ]
+  }
 }
