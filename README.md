@@ -29,3 +29,7 @@ gl_FragColor = vec4( vec3( random( gl_FragCoord.xy / resolution.xy ) ), 1.0 );
 Requiring the following will give you a function that doesn't specify any precision:  
 
 ```#pragma glslify: random = require(glsl-random/lowp)```
+
+## license
+
+BSD-3-Clause
