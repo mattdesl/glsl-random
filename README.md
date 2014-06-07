@@ -1,4 +1,6 @@
-# glsl-random 
+[![browser support](https://ci.testling.com/mattdesl/glsl-random.png)](https://ci.testling.com/mattdesl/glsl-random)
+
+# glsl-random [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
 The classic 'one-liner' for 2D pseudo-random values in GLSL. This uses a highp version for improved randomness and better stability across GPUs, see here:  
 http://byteblacksmith.com/improvements-to-the-canonical-one-liner-glsl-rand-for-opengl-es-2-0/

@@ -15,11 +15,25 @@
   "scripts": {
     "test": "browserify test/index.js -t glslify | testling -x open"
   },
+  "testling": {
+    "files": "test/test.js",
+    "preprocess": "browserify test/index.js -t glslify",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  },
   "dependencies": {},
   "devDependencies": {
     "tape": "~2.13.2",
     "glslify": "~1.4.0",
-    "gl-now": "~1.3.1"
+    "webgl-compile-shader": "~1.0.0"
   },
   "homepage": "https://github.com/mattdesl/glsl-random",
   "keywords": [
