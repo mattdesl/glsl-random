@@ -1,7 +1,7 @@
 {
   "name": "glsl-random",
   "description": "pseudo-random 2D noise for glslify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/mattdesl/glsl-random.git"
