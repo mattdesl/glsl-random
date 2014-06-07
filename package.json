@@ -19,7 +19,8 @@
   "devDependencies": {
     "tape": "~2.13.2",
     "glslify": "~1.4.0",
-    "webgl-compile-shader": "~1.0.0"
+    "webgl-compile-shader": "~1.0.0",
+    "browserify": "~4.1.8"
   },
   "homepage": "https://github.com/mattdesl/glsl-random",
   "keywords": [
