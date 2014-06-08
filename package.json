@@ -13,7 +13,7 @@
   "author": "Matt DesLauriers",
   "license": "BSD-3-Clause",
   "scripts": {
-    "test-browser": "browserify test/index.js -t glslify | testling -x open",
+    "test-browser": "browserify test/index.js -t glslify | testling -x open"
   },
   "dependencies": {},
   "devDependencies": {
