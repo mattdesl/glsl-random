@@ -1,7 +1,7 @@
 {
   "name": "glsl-random",
   "description": "pseudo-random 2D noise for glslify",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": {
     "type": "git",
     "url": "git://github.com/mattdesl/glsl-random.git"
@@ -22,7 +22,11 @@
     "webgl-compile-shader": "~1.0.0",
     "browserify": "~4.1.8"
   },
-  "browserify": { "transform": ["glslify"] },
+  "browserify": {
+    "transform": [
+      "glslify"
+    ]
+  },
   "homepage": "https://github.com/mattdesl/glsl-random",
   "keywords": [
     "glsl",
