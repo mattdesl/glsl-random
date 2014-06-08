@@ -8,7 +8,11 @@ var shader = glslify({
     fragment: './frag.glsl',
 });
 
+function doCompile() {
+    compile(shader);
+}
+
 test('compiles correctly', function(t) {
-    t.doesNotThrow( compile.bind(this, shader), 'compiles successfully' );
+    t.doesNotThrow( doCompile, 'compiles successfully' );
     t.end();
 });
