@@ -13,6 +13,7 @@ function doCompile() {
 }
 
 test('compiles correctly', function(t) {
+    //phantomjs doesn't support compile.bind(this, shader)
     t.doesNotThrow( doCompile, 'compiles successfully' );
     t.end();
 });
